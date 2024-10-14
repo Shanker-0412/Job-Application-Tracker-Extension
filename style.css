@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Lato:wght@300;400&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #4a0e4e, #81689D);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #2C3E50;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    padding: 35px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    width: 95%;
+    max-width: 520px;  /* Increased from 480px */
+    text-align: center;
+    overflow-y: auto;
+    max-height: 92vh;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8em;  /* Increased from 2.2em */
+    margin-bottom: 30px;
+    color: #4a0e4e;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #8E44AD;
+    color: white;
+    border: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 24px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Lato', sans-serif;
+}
+
+button:hover {
+    background-color: #9B59B6;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+#checkNow {
+    background-color: #2980B9;
+}
+
+#checkNow:hover {
+    background-color: #3498DB;
+}
+
+.application {
+    background-color: white;
+    border: 1px solid #E8E8E8;
+    padding: 22px;
+    margin-bottom: 22px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.application:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.app-link {
+    color: #8E44AD;
+    text-decoration: none;
+    font-weight: bold;
+    flex-basis: 100%;
+    margin-bottom: 12px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+}
+
+.app-link:hover {
+    text-decoration: underline;
+}
+
+.app-status, .app-date, .app-checked {
+    color: #7F8C8D;
+    font-style: italic;
+    font-size: 0.95em;
+    flex-basis: 48%;
+    margin-bottom: 10px;
+}
+
+.delete-btn {
+    background-color: #C0392B;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    flex-basis: 100%;
+}
+
+.delete-btn:hover {
+    background-color: #E74C3C;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
